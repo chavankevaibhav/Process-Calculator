@@ -1,7 +1,6 @@
-
+%%writefile app.py
 import streamlit as st
 from main import HeatExchanger, DistillationColumn, FluidMechanics, ChemicalReactor, FluidProperties
-import HeatExchanger, DistillationColumn, FluidMechanics, ChemicalReactor, FluidProperties
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt # Ensure matplotlib is imported for plotting
@@ -178,6 +177,7 @@ def distillation_column_tool():
                 st.metric("Minimum Theoretical Stages (N_min)", f"{N_min:.1f}", help="The theoretical minimum number of equilibrium stages required at total reflux (infinite reflux ratio).")
 
 
+            # Include McCabe-Thiele Diagram
             st.subheader("McCabe-Thiele Diagram")
             st.markdown("""
             This diagram graphically represents the vapor-liquid equilibrium and operating lines.
@@ -350,6 +350,7 @@ def chemical_reactor_tool():
                 st.metric("Conversion", f"{result['conversion']:.4f}", help="The fraction of the initial/inlet reactant that has been consumed.")
 
 
+            # Include Concentration Profile Plot
             st.subheader("Concentration Profile")
             st.markdown("""
             This plot shows how the reactant concentration changes with time (for Batch) or residence time/position (for CSTR/PFR).
