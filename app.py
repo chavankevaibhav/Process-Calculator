@@ -1,6 +1,7 @@
 
 import streamlit as st
-from main.py import HeatExchanger, DistillationColumn, FluidMechanics, ChemicalReactor, FluidProperties
+from chemical_engineering_toolkit import HeatExchanger, DistillationColumn, FluidMechanics, ChemicalReactor, FluidProperties
+import HeatExchanger, DistillationColumn, FluidMechanics, ChemicalReactor, FluidProperties
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt # Ensure matplotlib is imported for plotting
