@@ -1,4 +1,4 @@
-%%writefile app.py
+
 import streamlit as st
 from main import HeatExchanger, DistillationColumn, FluidMechanics, ChemicalReactor, FluidProperties
 import pandas as pd
