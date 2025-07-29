@@ -1,12 +1,12 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt # Keep this import, it will be resolved by requirements.txt
+import matplotlib as plt 
 import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots
 import math
-from scipy.optimize import fsolve # Import fsolve for reactor calculations
+from scipy.optimize import fsolve 
 
 # Page configuration
 st.set_page_config(
