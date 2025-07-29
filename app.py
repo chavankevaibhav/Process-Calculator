@@ -1,6 +1,6 @@
 
 import streamlit as st
-from chemical_engineering_toolkit import HeatExchanger, DistillationColumn, FluidMechanics, ChemicalReactor, FluidProperties
+from main import HeatExchanger, DistillationColumn, FluidMechanics, ChemicalReactor, FluidProperties
 import HeatExchanger, DistillationColumn, FluidMechanics, ChemicalReactor, FluidProperties
 import pandas as pd
 import numpy as np
